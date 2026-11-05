@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<section class="wrap page-head">
+<p class="eyebrow"><a href="/lyrics/">Στίχοι</a> / {{ title }}</p>
+<h1 class="song-title">{{ title }}</h1>
+<p class="mono small muted">Lyrics · {{ site.name }}</p>
+</section>
+<section class="wrap">
+<div class="lyrics">
+{{ content | safe }}
+</div>
+<p class="back"><a href="/lyrics/">← Όλοι οι στίχοι</a></p>
+</section>

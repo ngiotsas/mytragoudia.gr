@@ -1,0 +1,9 @@
+{
+  "layout": "song.njk",
+  "tags": "songs",
+  "permalink": "/lyrics/{{ page.fileSlug }}/",
+  "eleventyComputed": {
+    "pageTitle": "Lyrics - {{ title }}",
+    "description": "Οι στίχοι του τραγουδιού {{ title }}."
+  }
+}

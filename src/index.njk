@@ -1,0 +1,25 @@
+---
+layout: base.njk
+---
+<section class="hero"><div class="wrap">
+<h1>Λίγοι άνθρωποι,<br>πολλά τραγούδια.</h1>
+<p class="lead">Είμαστε μια μικρή παρέα που φτιάχνει μουσική. Γράφουμε δικά μας κομμάτια, κάνουμε ριμίξ, αλλάζουμε τραγούδια που αγαπάμε και ανεβάζουμε εδώ ό,τι βγαίνει.</p>
+<div class="actions"><a class="btn primary" href="/lyrics/">Δες τους στίχους</a><a class="btn" href="/about/">Ποιοι είμαστε</a></div>
+</div>
+<div class="wave-band">{% wave %}</div>
+</section>
+<section class="wrap block">
+<h2>Τι κάνουμε</h2>
+<div class="grid3">
+<article class="what"><span class="chip">Γράφουμε</span><p>Στίχοι και μελωδίες από το μηδέν. Κάποια κομμάτια τελειώνουν σε μια μέρα, άλλα σε μήνες.</p></article>
+<article class="what"><span class="chip">Ριμίξ</span><p>Παίρνουμε ένα τραγούδι και του δίνουμε άλλο ρυθμό, άλλο ύφος, άλλη ενέργεια.</p></article>
+<article class="what"><span class="chip">Πειράματα</span><p>Διασκευές, mashups και ό,τι άλλο μας έρθει. Δεν υπάρχουν κανόνες, μόνο ήχος.</p></article>
+</div>
+</section>
+{%- set latest = collections.songs | last %}
+{%- if latest %}
+<section class="wrap block">
+<h2>Τελευταίοι στίχοι</h2>
+<a class="track" href="{{ latest.url }}"><span class="mono small">Στίχοι</span><span class="track-title">{{ latest.data.title }}</span><span class="arrow" aria-hidden="true">→</span></a>
+</section>
+{%- endif %}

@@ -1,0 +1,15 @@
+---
+layout: base.njk
+pageTitle: Στίχοι
+description: Στίχοι από τα τραγούδια του MyTragoudia.GR.
+permalink: /lyrics/
+---
+<section class="wrap page-head"><p class="eyebrow">Στίχοι</p><h1>Στίχοι</h1>
+<p class="lead">Οι στίχοι από τα τραγούδια μας. Η λίστα μεγαλώνει με κάθε νέο κομμάτι.</p></section>
+<section class="wrap block">
+<ol class="tracklist">
+{%- for song in collections.songs | reverse %}
+<li><a class="track" href="{{ song.url }}"><span class="mono small">{{ loop.revindex | pad2 }}</span><span class="track-title">{{ song.data.title }}</span><span class="arrow" aria-hidden="true">→</span></a></li>
+{%- endfor %}
+</ol>
+</section>

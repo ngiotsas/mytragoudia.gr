@@ -1,0 +1,26 @@
+---
+layout: base.njk
+pageTitle: Επικοινωνία
+description: Επικοινώνησε με την ομάδα του MyTragoudia.GR.
+permalink: /contact/
+---
+<section class="wrap page-head"><p class="eyebrow">Επικοινωνία</p><h1>Γράψε μας</h1></section>
+<section class="wrap prose">
+<p class="lead">Έχεις στίχους, μια μελωδία ή ένα τραγούδι που θέλεις να ακούσεις σε ριμίξ; Στείλε μας μήνυμα και θα σου απαντήσουμε.</p>
+<div class="contact-card">
+<span class="mono small">Email</span>
+<span class="email" id="email">{{ site.email }}</span>
+<button class="btn" type="button" id="copy-email">Αντιγραφή</button>
+<span class="small muted" id="copy-status" role="status"></span>
+</div>
+<p class="small muted">Διάβασε πρώτα τη σελίδα <a href="/about/">Σχετικά</a> για να δεις τι κάνουμε.</p>
+</section>
+<script>
+document.getElementById("copy-email").addEventListener("click", function () {
+  var el = document.getElementById("email"), s = document.getElementById("copy-status");
+  function sel() { var r = document.createRange(); r.selectNodeContents(el); var w = getSelection(); w.removeAllRanges(); w.addRange(r); s.textContent = "Επιλέχθηκε. Πάτα Ctrl+C / Cmd+C."; }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(el.textContent.trim()).then(function () { s.textContent = "Αντιγράφηκε."; }, sel);
+  } else { sel(); }
+});
+</script>
