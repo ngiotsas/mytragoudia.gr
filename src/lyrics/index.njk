@@ -9,7 +9,7 @@ permalink: /lyrics/
 <section class="wrap block">
 <ol class="tracklist">
 {%- for song in collections.songs | reverse %}
-<li><a class="track" href="{{ song.url }}"><span class="mono small">{{ loop.revindex | pad2 }}</span><span class="track-title">{{ song.data.title }}</span><span class="arrow" aria-hidden="true">→</span></a></li>
+<li><a class="track" href="{{ song.url }}"><span class="mono small">{{ loop.revindex | pad2 }}</span><span class="track-title">{{ song.data.title }}{% if song.data.subtitle %}<span class="track-sub">{{ song.data.subtitle }}</span>{% endif %}</span><span class="arrow" aria-hidden="true">→</span></a></li>
 {%- endfor %}
 </ol>
 </section>
