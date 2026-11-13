@@ -14,7 +14,8 @@ export default function (eleventyConfig) {
   );
 
   // Decorative waveform under the home page hero.
-  eleventyConfig.addShortcode("wave", (n = 96) => {
+  eleventyConfig.addShortcode("wave", (count) => {
+    const n = Number(count) > 0 ? Number(count) : 96;
     let bars = "";
     for (let i = 0; i < n; i++) {
       let h = 8 + 44 * Math.abs(Math.sin(i * 0.37) * 0.6 + Math.sin(i * 0.11 + 1) * 0.4) * (0.55 + 0.45 * Math.abs(Math.sin(i * 0.05)));

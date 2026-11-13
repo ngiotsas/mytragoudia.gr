@@ -158,3 +158,9 @@ p { margin: 0; }
 .foot-row strong { color: var(--ink); font-family: var(--display); font-size: 1.15rem; }
 .foot-row nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
 .foot-row nav a { color: var(--muted); }
+
+/* Members */
+.members { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 1rem; }
+.member { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem; display: grid; gap: 0.6rem; align-content: start; min-width: 0; }
+.member h3 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 1.75rem; line-height: 1.05; }
+.roles { display: flex; flex-wrap: wrap; gap: 0.4rem; }
