@@ -22,6 +22,6 @@
 <footer class="site-foot"><div class="wrap foot-row">
 <p><strong>{{ site.name }}</strong><br>{{ site.tagline }}</p>
 <nav aria-label="Υποσέλιδο">{% for item in site.nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}</nav>
-<p class="mono small">© {% year %} mytragoudia.gr</p></div></footer>
+<p class="foot-meta"><a class="foot-yt" href="{{ site.youtube.url }}" target="_blank" rel="noopener">YouTube {{ site.youtube.handle }}</a><span class="mono small">© {% year %} mytragoudia.gr</span></p></div></footer>
 </body>
 </html>

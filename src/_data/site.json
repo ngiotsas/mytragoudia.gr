@@ -4,9 +4,25 @@
   "tagline": "Λίγοι φίλοι, ένα laptop και πολλή αγάπη για τη μουσική.",
   "email": "info@mytragoudia.gr",
   "nav": [
-    { "url": "/", "label": "Αρχική" },
-    { "url": "/about/", "label": "Σχετικά" },
-    { "url": "/lyrics/", "label": "Στίχοι" },
-    { "url": "/contact/", "label": "Επικοινωνία" }
-  ]
+    {
+      "url": "/",
+      "label": "Αρχική"
+    },
+    {
+      "url": "/about/",
+      "label": "Σχετικά"
+    },
+    {
+      "url": "/lyrics/",
+      "label": "Στίχοι"
+    },
+    {
+      "url": "/contact/",
+      "label": "Επικοινωνία"
+    }
+  ],
+  "youtube": {
+    "handle": "@followmytragoudia",
+    "url": "https://www.youtube.com/@followmytragoudia"
+  }
 }

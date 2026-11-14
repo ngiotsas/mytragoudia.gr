@@ -164,3 +164,18 @@ p { margin: 0; }
 .member { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem; display: grid; gap: 0.6rem; align-content: start; min-width: 0; }
 .member h3 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 1.75rem; line-height: 1.05; }
 .roles { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+/* YouTube */
+.yt-card {
+  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem;
+  padding: 1.1rem 1.25rem; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  color: var(--ink); text-decoration: none; max-width: 42rem;
+}
+.yt-card:hover { border-color: var(--accent); }
+.yt-play { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; background: var(--accent); }
+.yt-play svg { fill: var(--accent-ink); }
+.yt-text { display: grid; gap: 0.15rem; min-width: 0; }
+.yt-text .mono { color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+.yt-handle { font-family: var(--display); font-weight: 700; font-size: clamp(1.3rem, 4vw, 1.75rem); line-height: 1.1; overflow-wrap: anywhere; }
+.foot-meta { display: grid; gap: 0.35rem; }
+.foot-yt { color: var(--ink); font-weight: 500; }
