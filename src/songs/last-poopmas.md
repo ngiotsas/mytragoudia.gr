@@ -2,6 +2,7 @@
 title: Last Poopmas
 subtitle: Parody
 date: 2026-11-20
+audio: /assets/last-poopmas.m4a
 lang: en
 ---
 

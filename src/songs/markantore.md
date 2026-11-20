@@ -2,6 +2,7 @@
 title: ΜΑΡΚΑΝΤΟΡΕ
 subtitle: Parody
 date: 2026-11-12
+audio: /assets/markantore.m4a
 ---
 
 ## Ρεφρέν
