@@ -3,6 +3,7 @@ import { HtmlBasePlugin } from "@11ty/eleventy";
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(HtmlBasePlugin);
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/ads.txt");
 
   // Single line breaks inside a verse stay as line breaks.
   eleventyConfig.amendLibrary("md", (md) => md.set({ breaks: true }));
