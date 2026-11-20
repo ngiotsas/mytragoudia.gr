@@ -2,6 +2,7 @@
 title: XALANT
 subtitle: "Parody · #shortsong"
 date: 2026-11-12
+audio: /assets/xalant.m4a
 ---
 
 Haaland, Haaland
