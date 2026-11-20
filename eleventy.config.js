@@ -7,6 +7,14 @@ export default function (eleventyConfig) {
   // Single line breaks inside a verse stay as line breaks.
   eleventyConfig.amendLibrary("md", (md) => md.set({ breaks: true }));
 
+  // Greek and English songs are listed separately on the lyrics page.
+  eleventyConfig.addCollection("songsGreek", (api) =>
+    api.getFilteredByTag("songs").filter((song) => song.data.lang !== "en")
+  );
+  eleventyConfig.addCollection("songsEnglish", (api) =>
+    api.getFilteredByTag("songs").filter((song) => song.data.lang === "en")
+  );
+
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("isActive", (itemUrl, pageUrl) =>

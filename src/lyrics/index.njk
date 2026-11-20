@@ -8,7 +8,15 @@ permalink: /lyrics/
 <p class="lead">Οι στίχοι απ' τα τραγούδια μας. Η λίστα μεγαλώνει με κάθε νέο κομμάτι.</p></section>
 <section class="wrap block">
 <ol class="tracklist">
-{%- for song in collections.songs | reverse %}
+{%- for song in collections.songsGreek | reverse %}
+<li><a class="track" href="{{ song.url }}"><span class="mono small">{{ loop.revindex | pad2 }}</span><span class="track-title">{{ song.data.title }}{% if song.data.subtitle %}<span class="track-sub">{{ song.data.subtitle }}</span>{% endif %}</span><span class="arrow" aria-hidden="true">→</span></a></li>
+{%- endfor %}
+</ol>
+</section>
+<section class="wrap block" lang="en">
+<h2>English</h2>
+<ol class="tracklist">
+{%- for song in collections.songsEnglish | reverse %}
 <li><a class="track" href="{{ song.url }}"><span class="mono small">{{ loop.revindex | pad2 }}</span><span class="track-title">{{ song.data.title }}{% if song.data.subtitle %}<span class="track-sub">{{ song.data.subtitle }}</span>{% endif %}</span><span class="arrow" aria-hidden="true">→</span></a></li>
 {%- endfor %}
 </ol>

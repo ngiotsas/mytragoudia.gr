@@ -27,14 +27,15 @@
       "Μέλος",
       "Τεχνικός IT"
     ],
-    "bio": "Ο Nikos είναι ο web developer, ο designer και ο άνθρωπος του IT της MyTragoudia.GR."
+    "bio": "Ο Nikos είναι ο web developer, ο designer και ο άνθρωπος του IT της MyTragoudia.GR. Καμιά φορά φτιάχνει και βίντεο."
   },
   {
     "name": "Περσέας",
     "roles": [
-      "Μέλος"
+      "Μέλος",
+      "Βίντεο & Marketing"
     ],
-    "bio": "Ο Περσέας είναι ο χορευτής της παρέας και βοηθάει στο γράψιμο."
+    "bio": "Ο Περσέας φτιάχνει τα βίντεο και κάνει το marketing της MyTragoudia.GR."
   },
   {
     "name": "Νικόλας",

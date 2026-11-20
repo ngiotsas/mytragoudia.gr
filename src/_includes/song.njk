@@ -7,7 +7,7 @@ layout: base.njk
 <p class="mono small muted">{% if subtitle %}{{ subtitle }} · {% endif %}Lyrics · {{ site.name }}</p>
 </section>
 <section class="wrap">
-<div class="lyrics">
+<div class="lyrics"{% if lang %} lang="{{ lang }}"{% endif %}>
 {{ content | safe }}
 </div>
 <p class="back"><a href="/lyrics/">← Όλοι οι στίχοι</a></p>
