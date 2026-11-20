@@ -1,6 +1,7 @@
 ---
 title: ΝΙΞ ΦΑΪ
 date: 2026-11-05
+audio: /assets/nixfai.m4a
 ---
 
 ## Κουπλέ 1
